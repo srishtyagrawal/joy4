@@ -1,0 +1,55 @@
+html,body {
+  font-family: 'Open Sans', sans-serif;
+  height:100%;
+}
+
+
+.tp {
+	height: 100%;
+	width: 100%;
+}
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #d6d6d6;
+    padding: 10px; 
+}
+
+.container {
+    padding-bottom: 10px;
+}
+
+.meal-title {
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    font-size: 200%;
+    text-align: center;
+}
+
+.moods {
+    text-align: center;
+
+}
+
+.smiley {
+    max-height: 30px;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.date {
+    text-align: right;
+    font-style: italic;
+    color: #888;
+}
+

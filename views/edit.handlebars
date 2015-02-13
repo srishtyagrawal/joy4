@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <!-- NECESSARY META-DATA -->
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+    <!--Page title (what show on the tab) -->
+		<title>Appetit: Diet for humans</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles2.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+		
+<div class="container-full">
+
+  	<div id="alert1" class="alert alert-info" role="alert">
+  	<a href="#" class="alert-link">
+  		<h4>Please enter a number!</h4>
+      	<button class="bs-callout bs-callout-danger" id="button1" onclick="hide()" type="button">OK</button> 
+  	</a>
+	</div>
+	
+	 <div id="alert2" class="alert alert-info" role="alert">
+  	<a href="#" class="alert-link">
+  		<h4>Monthly Cheat Meals Edited!</h4>
+      	<p>Please use the navigation bar to proceed.</p>
+		<button class="bs-callout bs-callout-danger" id="button1" onclick="hide()" type="button">OK</button> 
+  	</a>
+	</div>
+
+  <div class="row">
+    <div class="col-lg-12 text-center v-center">
+      <p class="prompt">How many cheat meals </p>
+      <p class="prompt">would you like this month?</p>
+	  <p id="demo"></p>
+
+
+      <br><br><br>
+          
+      <form class="col-lg-12">
+        <div class="input-group" style="width:70%;text-align:center;margin:0 auto;">
+          <input id="num_cheat" class="form-control input-lg" title="Don't worry. We hate spam, and will not share your email with anyone." placeholder="Cheat meal #" type="text" aria-describedby="sizing-addon1">
+          <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button" onclick="myFunction()" >GO!</button></span>
+        </div>
+      </form>
+    </div>      
+  </div> <!-- /row -->
+</div>
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="btn-group btn-group-justified">
+    <a class="btn btn-primary btn" href="/" role="button"><img src="img/home.png"/></a>
+    <a class="btn btn-primary btn" href="/upload" role="button"><img src="img/camera.png"/></a>
+    <a class="btn btn-primary btn" href="/report" role="button"><img src="img/chart.png"/></a>
+  </div>
+</nav> 
+
+
+
+
+	<!-- script references -->
+			<script src="js/jquery.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+		
+	
+
+		
+	<script>
+function myFunction() {
+    var x = $('#num_cheat').val();
+	for (i = 0 ; i < x.length ; i++) 
+	{ 
+      if ((x.charAt(i) < '0') || (x.charAt(i) > '9')) 
+		{
+			$('#alert1').show();
+			$('#alert2').hide();
+			break;
+		}
+	else
+	{
+		$('#alert2').show();
+		$('#alert1').hide();
+	}
+		
+    } 
+}
+
+</script>
+
+<script>
+$('#alert1').hide();
+$('#alert2').hide();
+</script>
+
+<script>
+function hide(){
+	$('#alert1').hide();
+	$('#alert2').hide();
+}
+</script>
+
+
+	
+	
+	
+	</body>
+</html>

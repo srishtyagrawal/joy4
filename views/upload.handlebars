@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Bootstrap 3 Template</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        
+
+        <link href="css/styles.css" rel='stylesheet'>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-clockpicker.min.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/github.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datepicker.css">-->
+        
+        <!--for glyphicons-->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+      
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        
+	</head>
+<body>
+	<!--Start of meal thumnail -->
+
+		<div id="smailnail" class="thumbnail">
+      <ul class="pager">
+          <li><a href="/home">Previous</a></li>
+          <li><a href="/home"> Next </a></li>
+        </ul>
+		<img id ="foodThumnail" src="img/foodThumbail.jpg" alt="foodThumnail">
+		<br></br>
+		<!-- Makes the picture a button
+		<center><a href="#" class="btn" role="button"><img id="foodThumnail" src="img/foodThumbail.jpg"></a></center>
+		-->
+		<!--Upload the file -->
+		<center><input type="file" name="image" accept="image/*" capture></center>
+		
+	<!--END OF: meal thumbnail -->
+
+	<br>
+	<!--Enter caption 
+      	<div class="caption">
+        	<label class="control-label" for="input01">Description</label>
+          <div class="controls"><input  type="text" class="form-control input-xlarge" id="desc" placeholder="Write a caption" name="desc">
+       	</div>
+    <!--END OF: caption-->
+
+	<br> <!-- Spacing between photo and buttons-->
+
+	<!--How are you feeling section?-->
+	<div class="tryingToCenter">
+    	<label class="control-label center-block" for="input01">How are you feeling?</label>
+    	<center><p><a href="#" id ="TR" class="btn btn-danger" role="button"><img id="bad" src="img/sad35.png"></a><a href="#" class="btn btn-success" role="button"><img id="good" src="img/happy6.png"></a></p></center>
+ 	</div>
+
+
+ 	<!--END OF:  how are you feeling section?-->
+
+	<!--Enter Dish name section-
+      <div class="control-group">
+            <label class="control-label" for="input01">Dish name</label>
+       <div class="controls"><input type="text" id="enter" class="form-control input-xlarge" name="enter" placeholder="Find">
+        
+          </div>
+    </div>
+	<!--<div class="control-group">
+            <label class="control-label" for="input01">Dish Name</label>
+                   <div class="controls"><input type="text" id="name3" class="form-control input-xlarge" name="name3" placeholder="Find">
+           <div class="controls "><input type="text" id="name2"class="form-control input-xlarge"  name="name2" placeholder="e.g. burger and fries"> 
+       		</div>
+   	</div>-->
+   	<!--END OF: Enter Dish name section-->
+
+            
+	<br> <!-- Spacing between photo and buttons-->
+           
+    <!--Input time-->
+<div class="control-group ">
+            <label class="control-label" for="input01">Time</label>
+</div>
+    <div class="input-group clockpicker" data-placement="bottom" data-align="bottom" data-autoclose="true">
+    <input type="text" class="form-control" value="now" name="time">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-time"></span>
+    </span>
+</div>
+    <!--END OF TIME1-->
+
+            
+	<br> <!-- Spacing between photo and buttons-->
+            
+            
+   	<!--Input date -->
+    <form id="addFriendForm" role="form" method="get" action="/add">
+<div class="control-group ">
+    <label class="control-label" for="input01">Date</label>
+</div>
+<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+    <input class="form-control" size="16" type="text" value="12-02-2012" name="date">
+    <span class="add-on"><i class="icon-th"></i></span>
+</div><br>
+
+   	<!-- END OF date -->
+
+   	<!--Input location-->
+   	<div class="control-group">
+            <label class="control-label" for="input01">Location</label>
+       <div class="controls"><input type="text" id="location" class="form-control input-xlarge" name="location2" placeholder="Find">
+       	
+       		</div>
+   	</div>
+   	<!--END OF location-->
+
+        <!--Input description-->
+    <div class="control-group">
+            <label class="control-label" for="input01">a</label>
+       <div class="controls"><input type="text" id="kokoko" class="form-control input-xlarge" name="location3" placeholder="Write a caption">
+        
+          </div>
+    </div>
+    <!--END OF description-->
+
+
+        <!--Input type-->
+    <div class="control-group">
+            <label class="control-label" for="input01">Description</label>
+       <div class="controls"><input type="text" id="location" class="form-control input-xlarge" name="location4" placeholder="type">
+        
+          </div>
+    </div>
+    <!--END OF type-->
+
+
+        <!--Input dish name-->
+    <div class="control-group">
+            <label class="control-label" for="input01">Dish Name</label>
+       <div class="controls"><input type="text" id="location" class="form-control input-xlarge" name="location6" placeholder="e.g. burgers and fries">
+        
+          </div>
+    </div>
+    <!--END OF dish name-->
+
+
+
+    <!--SUBMIT BUTTON-->
+    <br>
+    <center><input type="submit" id="submitBtn" class="btn btn-default" value="Add meal"></input></center>
+  </form>
+
+
+
+            
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>-->
+<script type="text/javascript" src="js/bootstrap-clockpicker.min.js"></script>
+
+<script>
+function myfunc2(){
+    console.log("hii");
+    res.render('home');
+    window.location.assign("/add");
+}
+</script>
+
+<script>
+function myfunc1(){
+      console.log("hiiwww");
+      res.render('home');
+    window.location="/home";
+}
+</script>
+
+<script>
+var hello = $("#enter").val();
+</script>
+
+
+<!--script for clockpicker-->
+<script type="text/javascript">
+    $('.clockpicker').clockpicker();
+</script>
+
+<!--script for date picker-->
+<!--<script type="text/javascript">
+    $('.datepicker').datepicker();
+</script>-->
+
+<script>
+$('#kokoko').hide();
+</script>
+
+
+</body>
+</html>

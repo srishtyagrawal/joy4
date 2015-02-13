@@ -1,0 +1,46 @@
+.prompt {
+    font-family: 'Lobster', Georgia, Times, serif;
+    font-size: 35px;
+    color: #111111;
+}
+
+ #settingsImage  {
+	height: 50px;
+	width: 50px;
+	color: black;
+	background-color: black;
+	float:right;
+}
+
+.jumbotron {
+	padding: 10px 0px 0px 0px;
+	margin-bottom: 0px;
+}
+
+#remaining{
+	height: 120px;
+
+}
+
+.btn {
+	background-color: black;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+.thumbnail .tp{
+	height: 300px;
+	width: 400px;
+}
+
+
+.gridp {
+	height:100px;
+	width: 100px;
+}
+
+.sorters {
+	height:50px;
+	width: 100px;
+
+}
