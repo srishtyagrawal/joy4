@@ -30,9 +30,6 @@
 	<!--Start of meal thumnail -->
 
 		<div id="smailnail" class="thumbnail">
-      <ul class="pager">
-          <li><a href="/home">Cancel</a></li>
-        </ul>
 		<img id ="foodThumnail" src="img/foodThumbail.jpg" alt="foodThumnail">
 		<br></br>
 		<!-- Makes the picture a button
@@ -63,12 +60,10 @@
  	<!--END OF:  how are you feeling section?-->
 
 	<!--Enter Dish name section-
-      <div class="control-group">
-            <label class="control-label" for="input01">Dish name</label>
-       <div class="controls"><input type="text" id="enter" class="form-control input-xlarge" name="enter" placeholder="Find">
-        
-          </div>
-    </div>
+    <div class="control-group">
+        <label class="control-label" for="input01">Dish name</label>
+		<div class="controls"><input type="text" id="enter" class="form-control input-xlarge" name="enter" placeholder="Find"></div>
+	</div>
 	<!--<div class="control-group">
             <label class="control-label" for="input01">Dish Name</label>
                    <div class="controls"><input type="text" id="name3" class="form-control input-xlarge" name="name3" placeholder="Find">
@@ -111,32 +106,32 @@
    	<!--Input location-->
    	<div class="control-group">
             <label class="control-label" for="input01">Location</label>
-       <div class="controls"><input type="text" id="location" class="form-control input-xlarge" name="location2" placeholder="Find">
-       	
-       		</div>
+       <div class="controls"><input type="text" id="location" class="form-control input-xlarge" name="location2" placeholder="Find"></div>
    	</div>
    	<!--END OF location-->
-
-        <!--Input description-->
+	
+	<br>
+	
+	<!--Input description-->
     <div class="control-group">
-            <label class="control-label" for="input01">a</label>
-       <div class="controls"><input type="text" id="kokoko" class="form-control input-xlarge" name="location3" placeholder="Write a caption">
-        
-          </div>
-    </div>
+        <label class="control-label" for="input01">Description</label>
+		<div class="controls"><input type="text" id="location" class="form-control input-xlarge" name="location3" placeholder="Write a caption"></div>
+	</div>
     <!--END OF description-->
-
-
-        <!--Input type-->
+	
+	<br>
+	
+    <!--Input type-->
     <div class="control-group">
-            <label class="control-label" for="input01">Description</label>
-       <div class="controls"><input type="text" id="location" class="form-control input-xlarge" name="location4" placeholder="type">
-        
-          </div>
+        <label class="control-label" for="input01">Cheat/Healthy</label>
+		<br>
+		<input type="radio" name="meal_type" value="Cheat Meal" checked>Cheat Meal
+		<br>
+		<input type="radio" name="meal_type" value="Healthy Meal">Healthy Meal
     </div>
     <!--END OF type-->
 
-
+	<br>
         <!--Input dish name-->
     <div class="control-group">
             <label class="control-label" for="input01">Dish Name</label>
@@ -148,11 +143,15 @@
 
 
 
-    <!--SUBMIT BUTTON-->
+    <!--SUBMIT AND CANCEL BUTTONS-->
     <br>
-    <center><input type="submit" id="submitBtn" class="btn btn-default" value="Add meal"></input></center>
-  </form>
+	    <ul class="pager">
+		  <li><input type="submit" id="submitBtn" class="btn btn-default" value="Add meal"></input></li>
+		  <li></input><a href="/home"><input type="submit" id="cancelBtn" class="btn btn-default" value="Cancel"></a></li>
+		</ul>
 
+  </form>
+		
 
 
             

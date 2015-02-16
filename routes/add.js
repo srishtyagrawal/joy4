@@ -11,6 +11,7 @@ exports.addMeal= function(req, res) {
 			console.log("/////////////////");
 			console.log(number);
 					console.log("/////////////////");
+			console.log(req.query.mmeal_type);
     
 	var newMeal = {
     		"name": req.query.location6,
@@ -20,7 +21,7 @@ exports.addMeal= function(req, res) {
 			"month": "February",
 			"image": "empty-plate.png",
 			"mood" : "",
-			"type" : req.query.location3,
+			"type" : req.query.meal_type,
 			"desc" :  req.query.location4,
 			"location" : req.query.location2,
 			"id": number

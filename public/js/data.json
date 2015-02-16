@@ -8,7 +8,7 @@
 			"month": "February",
 			"image": "junk1.png",
 			"mood" : "happy",
-			"type" : "good",
+			"type" : "Cheat Meal",
 			"desc" : "It was awesome! Though it smelled like rat",
 			"location" : "In N Out",
 			"id": "1"
@@ -21,7 +21,7 @@
 			"month": "February",
 			"image": "junk3.png",
 			"mood" : "sad",
-			"type" : "good",
+			"type" : "Cheat Meal",
 			"desc" : "It was not that great. The only reason why I got is because I was in a rush",
 			"location" : "Olive Garden",
 			"id": "2"
@@ -34,7 +34,7 @@
 			"month": "February",
 			"image": "junk2.png",
 			"mood" : "happy",
-			"type" : "good",
+			"type" : "Healthy Meal",
 			"desc" : "I felt like eating better. That led me to eating healthy today. It was not too bad to be honest",
 			"location" : "In N Out",
 			"id": "3"
