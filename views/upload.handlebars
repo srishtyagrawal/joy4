@@ -147,11 +147,9 @@
     <br>
 	    <ul class="pager">
 		  <li><input type="submit" id="submitBtn" class="btn btn-default" value="Add meal"></input></li>
-		  <li></input><a href="/home"><input type="submit" id="cancelBtn" class="btn btn-default" value="Cancel"></a></li>
+			<li><input type="button" id="cancelBtn" class="btn btn-default" value="Cancel" onClick="parent.location='/home'"></input></li>
 		</ul>
-
-  </form>
-		
+	</form>
 
 
             
@@ -168,6 +166,7 @@
 <!--<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>-->
 <script type="text/javascript" src="js/bootstrap-clockpicker.min.js"></script>
 
+
 <script>
 function myfunc2(){
     console.log("hii");
@@ -183,6 +182,7 @@ function myfunc1(){
     window.location="/home";
 }
 </script>
+
 
 <script>
 var hello = $("#enter").val();
